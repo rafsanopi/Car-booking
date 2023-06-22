@@ -1,12 +1,11 @@
-import 'package:booking/controller.dart/sagment_controller.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:maps_launcher/maps_launcher.dart';
-
-import '../widget/menu1/custom_containers.dart';
+import '../controller.dart/itinerary/sagment_controller.dart';
+import '../widget/itinerary/custom_containers.dart';
 
 class SegmentMethods {
   var sagmentController = Get.put(SegmentController());

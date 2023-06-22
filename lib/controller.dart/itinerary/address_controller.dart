@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-import '../widget/menu1/address_list.dart';
+import '../../widget/itinerary/address_list.dart';
 
 class AddressController extends GetxController {
   RxList addresstList = [].obs;

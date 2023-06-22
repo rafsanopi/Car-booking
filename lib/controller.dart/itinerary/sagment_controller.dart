@@ -1,7 +1,7 @@
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
-import '../widget/menu1/sagment.dart';
+import '../../widget/itinerary/sagment.dart';
 
 class SegmentController extends GetxController {
   RxList sagmentList = [].obs;

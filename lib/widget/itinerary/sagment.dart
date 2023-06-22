@@ -1,5 +1,5 @@
 import 'package:booking/const/segment_const.dart';
-import 'package:booking/controller.dart/sagment_controller.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -8,6 +8,7 @@ import 'package:intl/intl.dart';
 
 import '../../const/colors.dart';
 
+import '../../controller.dart/itinerary/sagment_controller.dart';
 import 'address_list.dart';
 import 'custom_containers.dart';
 

@@ -1,12 +1,13 @@
-import 'package:booking/controller.dart/sagment_controller.dart';
 import 'package:booking/screens/contact_ui.dart';
 import 'package:booking/screens/itinerary_ui.dart';
 import 'package:booking/screens/summery.dart';
 import 'package:booking/screens/vehical_ui.dart';
-import 'package:booking/widget/menu1/custom_containers.dart';
+import 'package:booking/widget/itinerary/custom_containers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+
+import 'controller.dart/itinerary/sagment_controller.dart';
 
 // ignore: must_be_immutable
 class Home extends StatefulWidget {
@@ -65,8 +66,30 @@ class _HomeState extends State<Home> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         PageContainer(
-                            leftIcon: true, ontap: () {}, txt: "Privius"),
-                        PageContainer(ontap: () {}, txt: "Next"),
+                            leftIcon: true,
+                            ontap: () {
+                              if (sagmentController
+                                      .selectedContainerIndex.value >
+                                  0) {
+                                sagmentController
+                                    .selectedContainerIndex.value--;
+                              }
+                            },
+                            txt: "Privius"),
+                        PageContainer(
+                            ontap: () {
+                              if (sagmentController
+                                      .selectedContainerIndex.value <
+                                  3) {
+                                sagmentController
+                                    .selectedContainerIndex.value++;
+                              }
+                            },
+                            txt: sagmentController
+                                        .selectedContainerIndex.value ==
+                                    3
+                                ? "Submit"
+                                : "Next"),
                       ],
                     )
                   ],

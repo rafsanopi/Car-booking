@@ -1,12 +1,12 @@
-import 'package:booking/controller.dart/sagment_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
 import '../const/colors.dart';
-import '../widget/menu1/custom_containers.dart';
-import '../widget/menu1/sagment.dart';
+import '../controller.dart/itinerary/sagment_controller.dart';
+import '../widget/itinerary/custom_containers.dart';
+import '../widget/itinerary/sagment.dart';
 
 class ItineraryScreen extends StatelessWidget {
   const ItineraryScreen({super.key});
